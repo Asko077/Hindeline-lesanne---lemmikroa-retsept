@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+
+body {
+    background-color: rgb(147, 187, 177);
+}
+
+.heading h2 {
+    color: blue;
+    text-align: center;
+    font-family: "Chango", sans-serif;
+}
+
+.heading ul {
+    color: blueviolet;
+    list-style: none;
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    color: brown;
+}
+    
