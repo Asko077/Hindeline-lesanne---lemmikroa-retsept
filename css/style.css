@@ -10,10 +10,35 @@ body {
     font-family: "Chango", sans-serif;
 }
 
+.heading h2 {
+    font-size: 3.5rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(177, 224, 149);
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative; /*top-right-bottom-left*/
+    /*animation-iteration-count: infinite; */     
+}
+
+@keyframes header {
+    0% {top: -100px;}
+    100% {top: 10px}
+}
+
 .heading ul {
     color: blueviolet;
     list-style: none;
     text-align: center;
+    animation: text-right; 
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes text-right {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
 }
 
 .main {
@@ -22,5 +47,25 @@ body {
     height: 200px;
     width: 200px;
     color: brown;
+    animation: text-left;
+    animation-duration: 5s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes text-left {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.footer {
+    text-align: center;
 }
     
+.heading
+{
+    font-size: 3.5rem;
+    color: rgb(177, 224, 149);
+      
+}
